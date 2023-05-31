@@ -51,8 +51,11 @@ export default function App() {
     const response = await api.post('/register', {
       code,
     })
+    console.log('oie')
+    console.log(response)
 
     const { token } = response.data
+    console.log(token)
 
     await SecureStore.setItemAsync('token', token)
     router.push('/memories')
@@ -61,7 +64,6 @@ export default function App() {
   useEffect(() => {
     if (response?.type === 'success') {
       const { code } = response.params
-
       handleGithubOAuthCode(code)
     }
   }, [response])
