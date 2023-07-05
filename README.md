@@ -31,7 +31,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## 🚀 Aplicação
 
 <p align="center">
-  <img src="./assets/spacetime.png" width="500px">
+  <img src="./assets/spacetime.png" width="800px">
 </p>
 
 ---
